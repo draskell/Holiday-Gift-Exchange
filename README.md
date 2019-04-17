@@ -1,5 +1,36 @@
 # Holiday-Gift-Exchange
-A quick script to randomize a gift exchange and email all the participants so that nobody knows who everybody has.
+A quick script to randomize a gift exchange and email all the gifters so that nobody knows who everybody has.
+
+# Settings and config 
+
+## gifters:
+    a name:
+    another name:Sample postactivate script
+export ALERT_WITH_EMAIL = True
+export GMAIL_ADDRESS = <YOUREMAIL>@gmail.com
+export GMAIL_PASSWORD = <YOUR_GMAIL_PASSWORD>
+
+
+If ALERT_WITH_EMAIL is 'True' there must be an email list in 
+config.yml.  Additionally GMAIL_USERNAME and GMAIL_PASSWORD
+must be set.
+
+Functionality has only been tested with a gmail account.  Other
+servers will surely work, but might require tweaking.
+
+## Config
+The configuration file (congif.yml) contains a set of key:value
+pairs for which the key is the gifter's name and the value
+is their email.  If not using the email functionality just leave
+the values empty:
+
+    gifters:
+        a name:
+        another name:
+
+## Images
+Images in the ../images directory will be added to the emails
+as attachments.  This is a great place to add a personal touch.
 
 # Customizations that you need to make to use it:
 

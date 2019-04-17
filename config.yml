@@ -1,0 +1,14 @@
+slending_limit: 50
+gifters:
+  Prancer: prancer@northpole.com
+  Dancer: dancer@northpole.com
+  Rudolph: rdolph@northpole.com
+  Santa: mr.clause@northpole.com
+  Mrs. Claus: mrs.clause@northpole.com
+no_match_pairs:
+  - [Santa, Mrs. Claus]
+email_subject: "Hey Everybody the Holiday Gift Exchange Results Are In!"
+email_body:
+  Happy Holidays!
+
+  It's that time of year again and you get to get out and supress the existential dread of another year having flown past by engaging in commerce.
