@@ -7,6 +7,11 @@ from email.utils import formatdate
 
 import yaml
 
+
+def get_yaml(file_path):
+    with open(file_path, 'r') as f:
+        return yaml.load(f)
+
 class ConfigError(Exception):
     def __init__(self, message):
         # Call the base class constructor with the parameters it needs
@@ -38,7 +43,7 @@ class ConfigLoader(object):
     '''
     def __init__(self, path):
         self.path = path
-        self.config = yaml.loads(os.path.join(
+        self.config = get_yaml(os.path.join(
             os.path.dirname(__name__), 'config.yml'
         ))
         self.config = validate_configuration(self.config)
@@ -82,13 +87,13 @@ def load_config():
     TODO: The configuration object might be best as a class.
     '''
     # Load configuration file.
-    config = yaml.loads(os.path.join(
+    config = get_yaml(os.path.join(
         os.path.dirname(__name__), 'config.yml'
     ))
     # Add the formattable part of the 
     email_text_addition = (
-    "\n\nSpend ${amt} on {give}, and don't "
-    "forget to get something for your mom!"
+        "\n\nSpend ${amt} on {give}, and don't "
+        "forget to get something for your mom!"
     )
     config['email_body'] += email_text_addition 
     config['name_map'] = {
