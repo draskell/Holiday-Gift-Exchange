@@ -27,7 +27,7 @@ the values empty:
         another name: and email address
 
 ## Images
-Images in the ../images directory will be added to the emails
+Images in the ../data/images directory will be added to the emails
 as attachments.  This is a great place to add a personal touch.
 
 # Customizations that you need to make to use it:

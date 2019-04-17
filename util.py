@@ -9,6 +9,8 @@ import yaml
 
 
 def get_yaml(file_path):
+    '''Loads a YAML file at file_path.
+    '''
     with open(file_path, 'r') as f:
         return yaml.load(f)
 
@@ -40,6 +42,8 @@ def validate_configuration(config):
 
 class ConfigLoader(object):
     '''Class for storing configuration.
+
+    TODO: Replace current YAML configuration loading.
     '''
     def __init__(self, path):
         self.path = path
