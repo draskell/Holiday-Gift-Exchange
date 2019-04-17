@@ -5,7 +5,7 @@ gifters:
   Rudolph: rdolph@northpole.com
   Santa: mr.clause@northpole.com
   Mrs. Claus: mrs.clause@northpole.com
-no_match_pairs:
+disallowed_pairs:
   - [Santa, Mrs. Claus]
 email_subject: "Hey Everybody the Holiday Gift Exchange Results Are In!"
 email_body:
