@@ -3,16 +3,14 @@ A quick script to randomize a gift exchange and email all the gifters so that no
 
 # Settings and config 
 
-## gifters:
-    a name:
-    another name:Sample postactivate script
-export ALERT_WITH_EMAIL = True
-export GMAIL_ADDRESS = <YOUREMAIL>@gmail.com
-export GMAIL_PASSWORD = <YOUR_GMAIL_PASSWORD>
+## Sample postactivate script
 
+`export ALERT_WITH_EMAIL = True`
+`export GMAIL_ADDRESS = <YOUREMAIL>@gmail.com`
+`export GMAIL_PASSWORD = <YOUR_GMAIL_PASSWORD>`
 
-If ALERT_WITH_EMAIL is 'True' there must be an email list in 
-config.yml.  Additionally GMAIL_USERNAME and GMAIL_PASSWORD
+If `ALERT_WITH_EMAIL` is 'True' there must be an email list in 
+config.yml.  Additionally `GMAIL_USERNAME` and `GMAIL_PASSWORD`
 must be set.
 
 Functionality has only been tested with a gmail account.  Other
