@@ -5,9 +5,9 @@ A quick script to randomize a gift exchange and email all the gifters so that no
 
 ## Sample postactivate script
 
-`export ALERT_WITH_EMAIL = True`
-`export GMAIL_ADDRESS = <YOUREMAIL>@gmail.com`
-`export GMAIL_PASSWORD = <YOUR_GMAIL_PASSWORD>`
+    export ALERT_WITH_EMAIL = True
+    export GMAIL_ADDRESS = <YOUREMAIL>@gmail.com
+    export GMAIL_PASSWORD = <YOUR_GMAIL_PASSWORD>
 
 If `ALERT_WITH_EMAIL` is 'True' there must be an email list in 
 config.yml.  Additionally `GMAIL_USERNAME` and `GMAIL_PASSWORD`
@@ -23,8 +23,8 @@ is their email.  If not using the email functionality just leave
 the values empty:
 
     gifters:
-        a name:
-        another name:
+        a name: an email address
+        another name: and email address
 
 ## Images
 Images in the ../images directory will be added to the emails
